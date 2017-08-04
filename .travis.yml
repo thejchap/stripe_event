@@ -3,8 +3,8 @@ cache: bundler
 sudo: false
 
 rvm:
-  - 2.2
-  - 2.3.0
+  - 2.2.7
+  - 2.3.4
 
 gemfile:
   - gemfiles/rails4.1.gemfile
@@ -12,9 +12,7 @@ gemfile:
 
 matrix:
   include:
-    - rvm: 2.1
-      gemfile: gemfiles/rails3.2.gemfile
-    - rvm: jruby-19mode
+    - rvm: 2.1.9
       gemfile: gemfiles/rails3.2.gemfile
   fast_finish: true
 
